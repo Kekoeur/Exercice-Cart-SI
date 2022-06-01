@@ -9,6 +9,8 @@ class StorageDatabase implements Storable{
     public function __construct($c){
         $this->conn = $c;
         if($this->conn){
+            $sql = "CREATE TABLE IF NOT EXISTS Produits (id int AUTO_INCREMENT PRIMARY KEY, name varchar(255), total float);";
+            $this->conn->query($sql);
             $sql = "DELETE FROM Produits";
             $this->conn->query($sql);
         }
