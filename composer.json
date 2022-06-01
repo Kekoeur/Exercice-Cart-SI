@@ -1,5 +1,5 @@
 {
-    "name": "antoine/cart_interface-segregation",
+    "name": "Kekoeur/Exercice-Cart-SI",
     "autoload": {
         "psr-4": {
             "Cart\\": "src/"
@@ -7,8 +7,8 @@
     },
     "authors": [
         {
-            "name": "Antoine07",
-            "email": "antoine.lucsko@gmail.com"
+            "name": "Kekoeur",
+            "email": "christo26.g@gmail.com"
         }
     ],
     "require": {

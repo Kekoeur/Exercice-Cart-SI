@@ -13,9 +13,9 @@ $products = [
     new Bike(price: 1430, name :'Brompton'),
 ];
 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
+$servername = $_ENV['DB_SERVER'];
+$username = $_ENV['DB_USERNAME'];
+$password = $_ENV['DB_PASSWORD'];
 $dbname = "Cart";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
